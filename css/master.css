@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hamburger {
+  display: none;
+}
+.heavy-line {
+  height: 1vh;
+  width: 5vh;
+  background-color: black;
+  margin: 0.5vh 0;
+}
+
+.header-top div > div {
+  line-height: 7.5vh;
+}
+.header-top {
+  height: 7.5vh;
+}
+.thousand {
+  max-width: 1000px;
+}
+
+.menu_inline {
+  float: right;
+}
+.header-top-link {
+  float: right;
+  line-height: 7.5vh;
+}
+
+.header-top .container .col-lg-2 {
+  line-height: 7.5vh;
+}
+
+.header-top-link li, .menu_inline li{
+  display: inline-block;
+  list-style: none;
+  line-height: 7.5vh;
+  font-size: 1.5vh;
+}
+.header-top-link a, .menu_inline a {
+  text-decoration: none;
+  color: black;
+}
+.jumbo {
+  position: relative;
+}
+.jumbo img {
+  width: 100%;
+}
+
+.line {
+  background-color: black;
+  height: 1.5vh;
+  line-height: 7.5vh;
+  border: 0.8px solid black;
+  margin: 0 2px;
+}
+
+.text-jumbo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.text-jumbo h2 {
+  font-size: 5vh;
+  margin-bottom: 2vh;
+}
+.text-jumbo p {
+  font-size: 2.5vh;
+}
+.text-jumbo a {
+  display: inline-block;
+  width: 20vh;
+  margin-top: 1vh;
+}
+
+.bikes {
+  text-align: center;
+}
+
+.bikes .container div div {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  margin: 0 3vh;
+}
+.bikes .container div div a {
+  text-decoration: none;
+}
+.bikes .container div div img {
+  width: 50%;
+}
+.bikes .container div div h4, .bikes .container div div h2 {
+  margin: 3vh;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .header-top-link {
+    display: none;
+  }
+
+  .menu_inline {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    height: 7.5vh;
+    padding: 1.75vh 0;
+  }
+
+}
+
+@media screen and (max-width: 768px)
