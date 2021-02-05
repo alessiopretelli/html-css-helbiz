@@ -8,7 +8,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.hamburger {
+.container_100 {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+#hamburger {
   display: none;
 }
 .heavy-line {
@@ -23,6 +32,11 @@ body {
 }
 .header-top {
   height: 7.5vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 400;
 }
 .thousand {
   max-width: 1000px;
@@ -52,6 +66,7 @@ body {
 }
 .jumbo {
   position: relative;
+  margin-top: 7.5vh;
 }
 .jumbo img {
   width: 100%;
@@ -68,6 +83,7 @@ body {
 .text-jumbo {
   position: absolute;
   z-index: 1;
+  width: 40%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -75,35 +91,52 @@ body {
   color: white;
 }
 .text-jumbo h2 {
-  font-size: 5vh;
-  margin-bottom: 2vh;
+  margin-bottom: 5%;
+  font-size: 150%;
 }
 .text-jumbo p {
-  font-size: 2.5vh;
+  font-size: 100%;
 }
 .text-jumbo a {
   display: inline-block;
-  width: 20vh;
+  width: 30%;
   margin-top: 1vh;
 }
 
 .bikes {
   text-align: center;
 }
+.products_ {
+  width: 100%;
+  display: block;
+}
+.box_grey {
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 40px 20px;
+  background-color: #FAFAFA;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-.bikes .container div div {
-  background-color: #f6f6f6;
-  border-radius: 5px;
-  margin: 0 3vh;
+.text_center {
+  text-align: center;
 }
-.bikes .container div div a {
-  text-decoration: none;
+.margin_top_300 {
+  margin-top: 300px;
 }
-.bikes .container div div img {
-  width: 50%;
+.margin_top_650 {
+  margin-top: 650px;
 }
-.bikes .container div div h4, .bikes .container div div h2 {
-  margin: 3vh;
+#old_man {
+  background-image: url(../img/HelbizBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.iphone {
+  width: 80%;
 }
 
 
@@ -113,16 +146,41 @@ body {
     display: none;
   }
 
+  .md_display_none {
+    display: none;
+  }
+
   .menu_inline {
     display: none;
   }
 
-  .hamburger {
+  .md-display-none {
+    display: none;
+  }
+
+  .md-display {
     display: block;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #hamburger li {
+    height: 5px;
+    background-color: black;
+    list-style: none;
+    margin: 7.5px 0;
+  }
+
+  #hamburger {
     height: 7.5vh;
-    padding: 1.75vh 0;
   }
 
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 768px) {
+  .xs_display_none {
+    display: none;
+  }
+}
